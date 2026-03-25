@@ -78,7 +78,7 @@ nix-shell -p python3Packages.pyocd
 pip install pyocd
 ```
 
-Download `WHXY.CW32L010_DFP.1.0.2.pack` from [the vendor](https://www.whxy.com) or CMSIS pack repositories. Place it in your working directory.
+The required CMSIS-Pack files (`WHXY.CW32L010_DFP.1.0.0.pack` and `WHXY.CW32L010_DFP.1.0.2.pack`) are included in this repository.
 
 > **Note:** Cheap ST-Link V2 clones may need a firmware update to at least **V2J24** (via [STSW-LINK007](https://www.st.com/en/development-tools/stsw-link007.html)) for pyOCD to recognize them.
 
