@@ -66,6 +66,21 @@ Everything from the recommended patch, plus silences DP 104 entirely.
 
 The GD32 firmware (patched by Andrik45719 and gekkehenkie11) also silences DP 255. This DP is **not present** in the CW32L010 firmware v2.0.3, so no equivalent patch is needed.
 
+## Hardware connection
+
+Connect an ST-Link V2 (or clone) to the 4-pin SWD header on the sensor board:
+
+| Signal | ZY-M100 pad | ST-Link V2 pin |
+|--------|-------------|----------------|
+| VCC    | 1 (square pad) | 2 |
+| GND    | 2 | 7 |
+| SWDIO  | 3 | 6 |
+| SWCLK  | 4 | 4 |
+
+**Check your adapter's pinout — some clones have different pin layouts.**
+
+Refer to [Andrik45719/ZY-M100](https://github.com/Andrik45719/ZY-M100) for wiring photos.
+
 ## Tools
 
 OpenOCD does not have a native flash driver for CW32L010. Use **pyOCD** with the official CMSIS-Pack instead.
